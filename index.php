@@ -53,7 +53,7 @@ function navigate(id,index){
 }
 
 $( document ).ready(function() {
-    $.getJSON("http://cricapi.com/api/matches/?apikey=6aP8B4MImxSNxI6fevBmC2ZshO42",function(data){
+    $.getJSON("https://cricapi.com/api/matches/?apikey=6aP8B4MImxSNxI6fevBmC2ZshO42",function(data){
         var len = data.matches.length;
         var arr = [];
         for(let i=0;i<len;i++){
