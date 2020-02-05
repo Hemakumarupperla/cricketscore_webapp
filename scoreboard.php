@@ -252,8 +252,9 @@
    var ex = document.createElement('p');
    ex.className = 'extras'
    ex.innerHTML = "Extras(B:"+Myjson.fullScorecard.innings[inng].bye+","+"LB:"+Myjson.fullScorecard.innings[inng].legBye+","+"Wd:"+Myjson.fullScorecard.innings[inng].wide+","+"Nb:"+Myjson.fullScorecard.innings[inng].noBall+")";
-   document.body.appendChild(ex);  
-  document.body.appendChild(elm);
+   document.body.appendChild(ex); 
+ var elmt = document.createElement('hr')	 								
+  document.body.appendChild(elmt);
 		      
 
   
