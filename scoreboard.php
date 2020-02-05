@@ -71,12 +71,12 @@
 	padding:4px;
 	color:white;
 	font-weight:bold;
-	font-size:2vw;
+	font-size:2.5vw;
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
-	width:80vw;
-	height:2vw;
+	width:100vw;
+	height:2.3vw;
 	
 }
 }
