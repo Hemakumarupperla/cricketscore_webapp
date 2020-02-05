@@ -30,7 +30,7 @@
 	  
 	  	display: inline;
 	  	position: relative;
-	  	left:70px;
+	  	left:30px;
 	  	font-size:8px;
 	  }
 	
@@ -40,11 +40,11 @@
 	  	padding-right: 1vw;
 	  	padding-bottom: 0.5vw;
 	  	border:1px;
-	  	height:0.3vw;
+	  	height:0.5vw;
 	  	 border-collapse:separate;
 	  	 border-spacing: 0 1vw;
 	  	 text-align:left;
-         font-size:1vw;
+                  font-size:1.5vw;
 	  	 
 	  }
 
@@ -67,7 +67,7 @@
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
-	width:80vw;
+	width:50vw;
 	height:2vw;
 	
 }
