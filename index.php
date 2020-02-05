@@ -55,10 +55,13 @@
 	  {
 		.im
 		  {
-			width:50px;
-			height:50px;
+			width:95px;
+			height:95px;
 			margin: 0px 0px;
-			
+		  }
+		  .div{
+		  margin-top:0;
+		  margin-bottom:0;
 		  }
 		}
 		  
@@ -178,6 +181,8 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
                   }
                   
                  	});
+	 
+				 
                	     
                  }
               
@@ -187,6 +192,7 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
                    status.style.color = 'red';
                    $('.c'+i).append(status);
                  }
+	         div.className = 'div';
 }//for loop
      
 });
