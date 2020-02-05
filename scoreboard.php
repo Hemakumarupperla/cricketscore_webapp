@@ -44,7 +44,7 @@
 	  	 border-collapse:separate;
 	  	 border-spacing: 0 1vw;
 	  	 text-align:left;
-                  font-size:1.5vw;
+                  font-size:8vw;
 	  	 
 	  }
 
@@ -67,7 +67,7 @@
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
-	width:50vw;
+	width:100vw;
 	height:2vw;
 	
 }
