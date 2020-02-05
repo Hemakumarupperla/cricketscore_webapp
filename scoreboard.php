@@ -33,6 +33,13 @@
 	  	left:30px;
 	  	font-size:3vw;
 	  }
+	@media(max-width: 500px){
+		.extras{
+			font-size:1vw;
+			font-weight: bold;
+			margin-top: 0;
+		}
+	}
 	
 	@media(max-width: 500px){
 		.row,.rows,.tab,.vin
@@ -238,6 +245,14 @@
    }
 
    document.body.appendChild(table2);
+   elm = document.createElement("hr");
+   elm.className = 'hr'
+   document.body.appendChild(elm);
+   var ex = document.createElement('p');
+   ex.className = 'extras'
+   ex.innerHTML = "Extras(B:"+Myjson.fullScorecard.innings[inng].bye+","+"LB:"+Myjson.fullScorecard.innings[inng].legBye+","+"Wd:"+Myjson.fullScorecard.innings[inng].wide+","+"Nb:"+Myjson.fullScorecard.innings[inng].noBall+")";
+   document.body.appendChild(ex);
+		      
 
   
  
