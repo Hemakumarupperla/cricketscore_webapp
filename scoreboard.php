@@ -31,7 +31,7 @@
 	  	display: inline;
 	  	position: relative;
 	  	left:30px;
-	  	font-size:0.5vw;
+	  	font-size:0.2vw;
 	  }
 	
 	@media(max-width: 500px){
