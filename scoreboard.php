@@ -20,7 +20,7 @@
 			position: relative;
 			bottom:5px;
 		}
-	  .tab
+	  .tab,.tab1
 	  {text-align:left;
 
 
@@ -35,9 +35,9 @@
 	  }
 	
 	@media(max-width: 500px){
-		.row,.rows,.tab,.vin
+		.row,.rows,.tab,.vin,.tab1
 	  {
-	  	padding-right: 1.6vw;
+	  	padding-right: 4vw;
 	  	padding-bottom: 0.5vw;
 	  	border:1px;
 	  	height:0.2vw;
@@ -204,7 +204,7 @@
   var arr = ['.name','.runsConceded','.maidens','.wickets','overs','noBalls','wides','economy'];
   var arr1 = ['Bowler','R','M','W','O','NB','Wd','ECO'];
   var table2 = document.createElement('table');
-  table2.className = 'tab';
+  table2.className = 'tab1';
   var tr = document.createElement('tr');
   for(var it = 0;it<=7;it++) {
    var hd = document.createElement('th');
