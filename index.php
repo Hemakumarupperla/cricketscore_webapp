@@ -17,6 +17,7 @@
 		.summary
           {
           	color: red;
+		 font-size:4vw;
           	font-weight: bold;
           }
           @media(max-width:2000px)
