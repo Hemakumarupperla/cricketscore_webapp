@@ -51,10 +51,13 @@
          
           }
 		}
-          @media(max-width:1000px){
-		.i{
-			width:100px;
-			height:100px;
+          @media(max-width:1000px)
+	  {
+		.im
+		  {
+			width:50px;
+			height:50px;
+			margin: 0px 0px;
 			
 		  }
 		}
@@ -79,7 +82,7 @@
 <body>
 <script>
 	var img = document.createElement('img');
-	img.className = 'i';
+	img.className = 'im';
 	img.src = "logocric.png";
 	document.body.appendChild(img);
 	function getdetails(jk,sid,mid){
