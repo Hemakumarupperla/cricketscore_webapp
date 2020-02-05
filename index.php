@@ -31,16 +31,16 @@
          
           }
 		}
-	@media(max-width:500px)
+	@media(max-width:1000px)
        {
           .but
           {
-          margin-right: 7px;
+          margin-right: 9px;
           color: #008B8B;
           padding:5px 5px;
           background-color:white;
           font-weight:bold;
-           font-size:5.6vw;
+           font-size:3.5vw;
          
           }
 		}
