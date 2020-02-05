@@ -17,7 +17,7 @@
 			background-color: #008B8B;
 			padding:4px 4px;
 			font-weight:bold;
-			font-size:1.6;
+			font-size:1vw;
 		}
 			
 		}
