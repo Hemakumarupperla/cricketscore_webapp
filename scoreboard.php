@@ -279,7 +279,8 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/comments.php?seriesi
 			//console.log(Myjson.commentary.innings[inng].overs[ov].balls[bal].ballNumber);
 			for(cmt = 0;cmt<Myjson.commentary.innings[inng].overs[ov].balls[bal].comments.length;cmt++){
 				var comment = document.createElement('p');
-				comment.innerHTML = Myjson.commentary.innings[inng].overs[ov].balls[bal].comments[cmt].text
+				var overbal =  Myjson.commentary.innings[inng].overs[ov].number+"." +Myjson.commentary.innings[inng].overs[ov].balls[bal].ballNumber;
+				comment.innerHTML = overbal+":"+Myjson.commentary.innings[inng].overs[ov].balls[bal].comments[cmt].text
 				//console.log(Myjson.commentary.innings[inng].overs[ov].balls[bal].comments[cmt].text);
 				document.body.appendChild(comment);
 				comment.className = 'refcmt';
