@@ -55,8 +55,8 @@
 	  {
 		.im
 		  {
-			width:250px;
-			height:170px;
+			width:300px;
+			height:130px;
 			  border:2px solid black;
 			  
 		  }
