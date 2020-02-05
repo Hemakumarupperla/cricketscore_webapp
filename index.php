@@ -95,7 +95,7 @@ function getscore(sid,mid){
 
 	}
 
-fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?completedlimit=6&inprogresslimit=7&upcomingLimit=9", {
+fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?completedlimit=6&inprogresslimit=7&upcomingLimit=5", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "dev132-cricket-live-scores-v1.p.rapidapi.com",
