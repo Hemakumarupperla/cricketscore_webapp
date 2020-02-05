@@ -29,8 +29,8 @@
 	  
 	  	display: inline;
 	  	position: relative;
-	  	left:70px;
-	  	font-size:8px;
+	  	left:90px;
+	  	font-size:2.9px;
 	  }
 	
 	@media(max-width: 500px){
