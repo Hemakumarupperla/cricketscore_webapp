@@ -52,8 +52,9 @@
           }
 		}
           @media(max-width:1000px){
-		.i{margin-bottom:0;
-			margin-top:0;
+		.i{
+			width:100px;
+			height:100px;
 			
 		  }
 		}
