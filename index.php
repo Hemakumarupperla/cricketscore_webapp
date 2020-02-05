@@ -11,7 +11,7 @@
 		}
 		@media(max-width:1000px){
 			.teamscore{
-				font-size:3vw;
+				font-size:1.5vw;
 			}
 		}
 		@media(max-width:1000px){
