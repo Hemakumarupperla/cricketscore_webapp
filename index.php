@@ -134,6 +134,7 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
                                   }
                    if(MyJson.matchList.matches[i].scores.awayOvers!= 0.0)
                    {var score = document.createElement('p');
+		     score.className = 'teamscore';
                                 score.innerHTML =team2+"  "+ MyJson.matchList.matches[i].scores.awayScore+"("+ MyJson.matchList.matches[i].scores.awayOvers+")";
                                  $('.c'+i).append(score);
                    }
