@@ -53,7 +53,7 @@
 	}
 	@media(max-width: 500px){
 		.extras,.refcmt{
-			font-size:1.3vw;
+			font-size:2.6vw;
 			font-weight: bold;
 			
 		}
