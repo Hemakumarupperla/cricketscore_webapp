@@ -20,10 +20,7 @@
 			position: relative;
 			bottom:5px;
 		}
-		.hr
-		{
-			margin-top:0;
-		}
+	
 	  .tab
 	  {text-align:left;
 
