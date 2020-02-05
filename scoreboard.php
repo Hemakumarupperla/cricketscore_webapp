@@ -68,15 +68,15 @@
 
 @media(max-width:500px){
 .head{
-	padding:4px;
+	padding:4px 4px;
 	color:white;
 	font-weight:bold;
-	font-size:2.5vw;
+	font-size:2.9vw;
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
 	width:100vw;
-	height:2.3vw;
+	height:2.8vw;
 	
 }
 }
