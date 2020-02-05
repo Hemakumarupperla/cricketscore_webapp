@@ -21,7 +21,7 @@
 			bottom:5px;
 		}
 	  .tab
-	  {text-align:center;
+	  {text-align:left;
 
 
 	  }	
