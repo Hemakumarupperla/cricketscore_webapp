@@ -15,9 +15,10 @@
 			border:2px solid;
 			color: white;
 			background-color: #008B8B;
-			padding:4px 4px;
+			padding-bottom:8px;
+			padding-top:8px;
 			font-weight:bold;
-			font-size:1vw;
+			font-size:1.4vw;
 		}
 			
 		}
