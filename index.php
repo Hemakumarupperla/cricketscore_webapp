@@ -9,10 +9,23 @@
 			background-color: #008B8B;
 			padding:4px 4px;
 		}
+		@media(max-width:1000px){
+		.ms
+		{
+			border:2px solid;
+			color: white;
+			background-color: #008B8B;
+			padding:4px 4px;
+			font-weight:bold;
+			font-size:1.6;
+		}
+			
+		}
 		.st
 		{
 			color:green;
 			font-weight:bold;
+			font-size:1.8vw;
 		}
 		.summary
           {
@@ -36,12 +49,12 @@
        {
           .but
           {
-          margin-right: 9px;
+          margin-right: 9.3px;
           color: #008B8B;
-          padding:5px 5px;
+          padding:8px 8px;
           background-color:white;
           font-weight:bold;
-           font-size:3.5vw;
+           font-size:3.8vw;
          
           }
 		}
@@ -95,7 +108,7 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
                 div.className = 'c'+i;
                 var match = document.createElement('p');
                 match.className = 'ms';
-                match.innerHTML = MyJson.matchList.matches[i].series.name+"          "+MyJson.matchList.matches[i].venue.name;
+                match.innerHTML = MyJson.matchList.matches[i].series.name+"             "+MyJson.matchList.matches[i].venue.name;
                  document.body.appendChild(div);
                  $('.c'+i).append(match)
                  var team1 = MyJson.matchList.matches[i].homeTeam.name;
