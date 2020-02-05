@@ -17,7 +17,7 @@
 		.summary
           {
           	color: red;
-		 font-size:4vw;
+		 font-size:2vw;
           	font-weight: bold;
           }
           @media(max-width:2000px)
@@ -26,7 +26,7 @@
           {
           margin-right: 5px;
           color: #008B8B;
-          padding:2px 2px;
+          padding:4px 4px;
           background-color:white;
           font-weight:bold;
          
