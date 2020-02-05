@@ -56,7 +56,7 @@
 		.im
 		  {
 			width:250px;
-			height:110px;
+			height:170px;
 			  border:2px solid black;
 			  
 		  }
