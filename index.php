@@ -71,7 +71,7 @@
 <script>
 	var img = document.createElement('img');
 	img.className = 'i';
-	$('.i').append("<img src = 'C:/MAMP/htdocs/logocric.png'>");
+	$('.i').append("<img src = 'logocric.png'>");
 	document.body.appendChild(img);
 	function getdetails(jk,sid,mid){
             document.location.href = "scoreboard.php?sid="+sid+"&mid="+mid+"&j="+jk;
