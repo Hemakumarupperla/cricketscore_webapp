@@ -10,6 +10,11 @@
 			padding:4px 4px;
 		}
 		@media(max-width:1000px){
+			.teamscore{
+				font-size:3vw;
+			}
+		}
+		@media(max-width:1000px){
 		.ms
 		{
 			border:2px solid;
@@ -123,6 +128,7 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
                          if(MyJson.matchList.matches[i].status!= 'UPCOMING'){
                    if(MyJson.matchList.matches[i].scores.homeOvers!= 0.0){
                                 var score = document.createElement('p');
+			         score.className = 'teamscore';
                                 score.innerHTML =team1+"  "+ MyJson.matchList.matches[i].scores.homeScore+"("+ MyJson.matchList.matches[i].scores.homeOvers+")";
                                 $('.c'+i).append(score);
                                   }
