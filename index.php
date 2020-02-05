@@ -19,6 +19,8 @@
           	color: red;
           	font-weight: bold;
           }
+          @media(max-width:2000px)
+		  {
           .but
           {
           margin-right: 5px;
@@ -28,6 +30,20 @@
           font-weight:bold;
          
           }
+		}
+	@media(max-width:500px)
+       {
+          .but
+          {
+          margin-right: 7px;
+          color: #008B8B;
+          padding:5px 5px;
+          background-color:white;
+          font-weight:bold;
+           font-size:3vw;
+         
+          }
+		}
 	</style>
 	<script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
