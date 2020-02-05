@@ -40,7 +40,7 @@
           padding:5px 5px;
           background-color:white;
           font-weight:bold;
-           font-size:3vw;
+           font-size:5.6vw;
          
           }
 		}
