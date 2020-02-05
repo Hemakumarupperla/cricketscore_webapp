@@ -51,6 +51,14 @@
          
           }
 		}
+          @media(max-width:1000px){
+		.i{margin-bottom:0;
+			margin-top:0;
+			
+		  }
+		}
+		  
+		
 	@media(max-width:1000px)
        {
           .but
