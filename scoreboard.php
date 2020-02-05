@@ -20,6 +20,10 @@
 			position: relative;
 			bottom:5px;
 		}
+		.hr
+		{
+			margin-top:0;
+		}
 	  .tab
 	  {text-align:left;
 
@@ -35,7 +39,7 @@
 	  }
 	@media(max-width: 500px){
 		.extras{
-			font-size:1vw;
+			font-size:3vw;
 			font-weight: bold;
 			margin-top: 0;
 		}
