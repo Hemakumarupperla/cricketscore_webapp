@@ -38,13 +38,13 @@
 		.row,.rows,.tab,.vin
 	  {
 	  	padding-right: 3.5vw;
-	  	padding-bottom: 1.7vw;
+	  	padding-bottom: 0.5vw;
 	  	border:1px;
 	  	height:0.2vw;
 	  	 border-collapse:separate;
-	  	 border-spacing: 0 1vw;
+	  	 border-spacing: 0 1.3vw;
 	  	 text-align:left;
-                  font-size:2.6vw;
+                  font-size:2.4vw;
 	  	 
 	  }
 
@@ -63,7 +63,7 @@
 	margin-bottom:4px;
 	color:white;
 	font-weight:bold;
-	font-size:2.3vw;
+	font-size:2.8vw;
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
