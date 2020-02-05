@@ -31,13 +31,13 @@
 	  	display: inline;
 	  	position: relative;
 	  	left:30px;
-	  	font-size:1.5vw;
+	  	font-size:3vw;
 	  }
 	
 	@media(max-width: 500px){
 		.row,.rows,.tab,.vin
 	  {
-	  	padding-right: 1vw;
+	  	padding-right: 1.6vw;
 	  	padding-bottom: 0.5vw;
 	  	border:1px;
 	  	height:0.2vw;
@@ -63,12 +63,12 @@
 	margin-bottom:4px;
 	color:white;
 	font-weight:bold;
-	font-size:2vw;
+	font-size:2.3vw;
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
-	width:100vw;
-	height:2vw;
+	width:90vw;
+	height:2.4vw;
 	
 }
 }
