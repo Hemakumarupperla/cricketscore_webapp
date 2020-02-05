@@ -55,11 +55,10 @@
 	  {
 		.im
 		  {
-			width:125px;
+			width:200px;
 			height:70px;
 			  border:2px solid black;
-			margin: 0px 0px;
-			  padding:0;
+			  
 		  }
 		  
 		}
