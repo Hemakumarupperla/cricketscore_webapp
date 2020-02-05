@@ -41,9 +41,9 @@
 	  	border:1px;
 	  	height:0.3vw;
 	  	 border-collapse:separate;
-	  	 border-spacing: 0 1vw;
+	  	 border-spacing: 0 1.5vw;
 	  	 text-align:left;
-         font-size:1vw;
+         font-size:3vw;
 	  	 
 	  }
 
