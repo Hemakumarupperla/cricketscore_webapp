@@ -42,7 +42,7 @@
 	  	border:1px;
 	  	height:0.2vw;
 	  	 border-collapse:separate;
-	  	 border-spacing: 0 1.3vw;
+	  	 border-spacing: 0 4vw;
 	  	 text-align:left;
                   font-size:2.4vw;
 	  	 
