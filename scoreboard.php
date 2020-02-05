@@ -21,14 +21,9 @@
 			bottom:5px;
 		}
 	  .tab
-	  {text-align:center;
-
-
+	  {text-align:left;
 	  }	
-	 .hr
-	 {
-	 	
-	 }
+	
 	  @media(max-width: 500px){
 	  	  .scr{
 	  
