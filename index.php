@@ -28,7 +28,7 @@
 			padding-bottom:8px;
 			padding-top:8px;
 			font-weight:bold;
-			font-size:1.4vw;
+			font-size:2.3vw;
 		}
 			
 		}
@@ -36,12 +36,12 @@
 		{
 			color:green;
 			font-weight:bold;
-			font-size:1.8vw;
+			font-size:2.5vw;
 		}
 		.summary
           {
           	color: red;
-		 font-size:1.3vw;
+		 font-size:2.8vw;
           	font-weight: bold;
           }
           @media(max-width:2000px)
@@ -55,17 +55,6 @@
           font-weight:bold;
          
           }
-		}
-          @media(max-width:500px)
-	  {
-		.im
-		  {
-			width:300px;
-			height:130px;
-			  border:2px solid black;
-			  
-		  }
-		  
 		}
 .navbar-brand
       {
@@ -82,7 +71,7 @@
           padding:8px 8px;
           background-color:white;
           font-weight:bold;
-           font-size:3.8vw;
+           font-size:3vw;
          
           }
 		}
