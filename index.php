@@ -13,12 +13,12 @@
 			background-color: #008B8B;
 			padding:4px 4px;
 		}
-		@media(max-width:1000px){
+		@media(max-width:500px){
 			.teamscore{
 				font-size:1.5vw;
 			}
 		}
-		@media(max-width:1000px){
+		@media(max-width:500px){
 		.ms
 		{
 			border:2px solid;
@@ -55,7 +55,7 @@
          
           }
 		}
-          @media(max-width:1000px)
+          @media(max-width:500px)
 	  {
 		.im
 		  {
@@ -72,7 +72,7 @@
       }
 		  
 		
-	@media(max-width:1000px)
+	@media(max-width:500px)
        {
           .but
           {
