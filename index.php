@@ -23,7 +23,7 @@
 		{
 			border:2px solid;
 			color: white;
-			background-color: #008B8B;
+			background-color: #368BC1;
 			padding-bottom:8px;
 			padding-top:8px;
 			font-weight:bold;
@@ -109,10 +109,7 @@
   </div>  
 </nav>
 <script>
-	var img = document.createElement('img');
-	img.className = 'im';
-	img.src = "logocric.png";
-	document.body.appendChild(img);
+	
 	function getdetails(jk,sid,mid){
             document.location.href = "scoreboard.php?sid="+sid+"&mid="+mid+"&j="+jk;
           
