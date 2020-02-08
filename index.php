@@ -75,7 +75,7 @@
           background-color:white;
           font-weight:bold;
            font-size:3vw;
-            padding-left:0.5vw;
+            padding-left:5px;
          
           }
 		}
