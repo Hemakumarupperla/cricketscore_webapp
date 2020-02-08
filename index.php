@@ -94,10 +94,10 @@
         <a class="nav-link" href="live.html">UPCOMING</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">COMPLETED</a>
+        <a class="nav-link" href="completed.html">COMPLETED</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT US</a>
+        <a class="nav-link" href="about.html">CONTACT US</a>
       </li>    
     </ul>
   </div>  
