@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta name= 'viewport' content = "width=device-width,initial-scale=1.0">
+  <style>
+    .ms
+    {
+      border:2px solid;
+      color: white;
+      background-color: #008B8B;
+      padding:4px 4px;
+    }
+    
+    .summary
+          {
+            color: #008B8B;
+            font-weight: bold;
+             padding-left: 3px
+          }
+    .time{
+      color:red;
+      padding-left: 3px
+    }
+  </style>
+  <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+ 
+
+<script>
+  
+  
+function getscore(sid,mid){
+    return new Promise( resolve => {
+    
+           fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/match.php?seriesid="+sid+"&matchid="+mid, {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "dev132-cricket-live-scores-v1.p.rapidapi.com",
+    "x-rapidapi-key": "58c637e2a4mshdc73000604d617bp166404jsn6d692798bbc2"
+  }
+})
+.then((response )=> {
+  return(response.json());
+
+})
+.then(function(data2){
+  resolve(data2);
+   
+  });
+});
+
+  }
+
+fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?completedlimit=6&inprogresslimit=7&upcomingLimit=9", {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "dev132-cricket-live-scores-v1.p.rapidapi.com",
+    "x-rapidapi-key": "58c637e2a4mshdc73000604d617bp166404jsn6d692798bbc2"
+  }
+})
+.then((response) =>{
+ return response.json();
+})
+.then(async  MyJson =>{
+     console.log(MyJson);
+     for(let i = 0;i<MyJson.matchList.matches.length;i++){
+             let   sid = MyJson.matchList.matches[i].series.id;
+                  let mid = MyJson.matchList.matches[i].id;
+                 getscore(sid,mid).then( data2 =>{
+
+                     console.log(data2);
+                     if(MyJson.matchList.matches[i].status == 'UPCOMING'){
+                var div = document.createElement('div');
+                div.className = 'c'+i;
+                var match = document.createElement('p');
+                match.className = 'ms';
+                
+                match.innerHTML = data2.match.name+"          "+data2.match.venue.name;
+                 document.body.appendChild(div);
+                 $('.c'+i).append(match) 
+                   var sum = document.createElement('p');
+                   sum.innerHTML = data2.match.localStartDate;
+                   sum.className = 'summary';
+                   $('.c'+i).append(sum);
+                   var time = document.createElement('p');
+                   time.className = 'time';
+                   time.innerHTML = "starts at:"+data2.match.localStartTime;
+                   $(".c"+i).append(time)
+                }
+                  
+                  });
+                     
+                 
+              
+                
+//for loop
+}
+     
+});
+
+</script>
+</body>
+</html>
