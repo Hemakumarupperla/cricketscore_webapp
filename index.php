@@ -16,7 +16,8 @@
 		}
 		@media(max-width:500px){
 			.teamscore{
-				font-size:3.4vw;
+				font-size:3.8vw;
+				padding-left:0.5vw;
 			}
 		}
 		@media(max-width:500px){
@@ -36,13 +37,15 @@
 		{
 			color:green;
 			font-weight:bold;
-			font-size:3.5vw;
+			font-size:3.8vw;
+			padding-left:0.5vw;
 		}
 		.summary
           {
           	color: red;
 		 font-size:3.7vw;
           	font-weight: bold;
+		  padding-left:0.5vw;
           }
           @media(max-width:2000px)
 		  {
@@ -72,6 +75,7 @@
           background-color:white;
           font-weight:bold;
            font-size:3vw;
+            padding-left:0.5vw;
          
           }
 		}
