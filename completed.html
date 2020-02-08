@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta name= 'viewport' content = "width=device-width,initial-scale=1.0">
+  <style>
+    .ms
+    {
+      border:2px solid;
+      color: white;
+      background-color: #008B8B;
+      padding:4px 4px;
+    }
+  
+    
+    .stat{
+      color:red;
+      font-weight: bold;
+      margin-left: 6px;
+    }
+    .score{
+      margin-left: 6px;
+    }
+  </style>
+  <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+ 
+
+<script>
+  
+  
+function getscore(sid,mid){
+    return new Promise( resolve => {
+    
+           fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/match.php?seriesid="+sid+"&matchid="+mid, {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "dev132-cricket-live-scores-v1.p.rapidapi.com",
+    "x-rapidapi-key": "58c637e2a4mshdc73000604d617bp166404jsn6d692798bbc2"
+  }
+})
+.then((response )=> {
+  return(response.json());
+
+})
+.then(function(data2){
+  resolve(data2);
+   
+  });
+});
+
+  }
+
+fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?completedlimit=10&inprogresslimit=7&upcomingLimit=9", {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "dev132-cricket-live-scores-v1.p.rapidapi.com",
+    "x-rapidapi-key": "58c637e2a4mshdc73000604d617bp166404jsn6d692798bbc2"
+  }
+})
+.then((response) =>{
+ return response.json();
+})
+.then(async  MyJson =>{
+     console.log(MyJson);
+     for(let i = 0;i<MyJson.matchList.matches.length;i++){
+             let   sid = MyJson.matchList.matches[i].series.id;
+                  let mid = MyJson.matchList.matches[i].id;
+                 getscore(sid,mid).then( data2 =>{
+
+                  
+                     if(MyJson.matchList.matches[i].status == 'COMPLETED'){
+                         console.log(data2);
+                var div = document.createElement('div');
+                div.className = 'c'+i;
+                var match = document.createElement('p');
+                match.className = 'ms';
+                
+                match.innerHTML = data2.match.name+"          "+data2.match.venue.name;
+                 document.body.appendChild(div);
+                 $('.c'+i).append(match) 
+                   var team1 = data2.match.homeTeam.name;
+                   var team2 = data2.match.awayTeam.name;
+                    if(data2.match.scores.homeOvers!= 0.0){
+                                var score = document.createElement('p');
+                                score.className = 'score';
+                                score.innerHTML =team1+"  "+ data2.match.scores.homeScore+"("+ data2.match.scores.homeOvers+")";
+                                $('.c'+i).append(score);
+                                  }
+                   if(data2.match.scores.awayOvers!= 0.0)
+                   {var score = document.createElement('p');
+                            score.className = 'score';
+                                score.innerHTML =team2+"  "+ data2.match.scores.awayScore+"("+ data2.match.scores.awayOvers+")";
+                                 $('.c'+i).append(score);
+                   }
+                   var stat = document.createElement('p');
+                   stat.innerHTML = data2.match.matchSummaryText;
+                   stat.className = 'stat';
+                   $('.c'+i).append(stat);
+
+                }
+                  
+                  });
+                     
+                 
+              
+                
+//for loop
+}
+     
+});
+
+</script>
+</body>
+</html>
