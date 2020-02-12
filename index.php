@@ -216,4 +216,15 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
 
 </script>
 </body>
+<script>
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
 </html>
