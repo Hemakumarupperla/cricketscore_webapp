@@ -75,7 +75,7 @@
 	margin-top: 0;
 	border:1px solid white;
 	background-color: #008B8B;
-	width:100vw;
+	width:80vw;
 	height:2.8vw;
 	
 }
