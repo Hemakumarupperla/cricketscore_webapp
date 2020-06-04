@@ -131,7 +131,7 @@ function getscore(sid,mid){
 
 	}
 
-fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?completedlimit=30&inprogresslimit=30&upcomingLimit=30", {
+fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?completedlimit=20&inprogresslimit=30&upcomingLimit=30", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "dev132-cricket-live-scores-v1.p.rapidapi.com",
@@ -143,6 +143,9 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
 })
 .then(async  MyJson =>{
      console.log(MyJson);
+	if(MyJson.meta.completedlimit ==0){
+		console.log("null")
+	}
      for(let i = 0;i<MyJson.matchList.matches.length;i++){
                 var div = document.createElement('div');
                  let   sid = MyJson.matchList.matches[i].series.id;
