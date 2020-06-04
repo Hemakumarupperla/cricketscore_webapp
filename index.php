@@ -144,7 +144,7 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
 .then(async  MyJson =>{
      console.log(MyJson)
      for(let i = 0;i<MyJson.matchList.matches.length;i++){
-	     if(MyJson.meta.completedMatchCount ==0 && MyJson.meta.inprogressMatchCount ){
+	     if(MyJson.meta.completedMatchCount ==0 && MyJson.meta.inProgressMatchCount ){
 		 var div = document.createElement('div');
 		  div.className = 'err';
 		  var match = document.createElement('p');
