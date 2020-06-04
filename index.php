@@ -147,9 +147,10 @@ fetch("https://dev132-cricket-live-scores-v1.p.rapidapi.com/matches.php?complete
 		 var div = document.createElement('div');
 		  div.className = 'err';
 		  var match = document.createElement('p');
-		 match.innerHTML ='There are no completed matches recently'
+		 match.innerHTML ='There are no completed matches recently';
+		  $('err').append(match)
 		 document.body.appendChild(div);
-                 $('err').append(match)
+                
 	}
      for(let i = 0;i<MyJson.matchList.matches.length;i++){
                 var div = document.createElement('div');
